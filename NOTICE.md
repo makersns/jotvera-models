@@ -15,3 +15,11 @@ Jotvera packages previously released model data for local use. The package forma
 The public preview package is not endorsed by its upstream model authors. Compatibility and observed quality are reported by Jotvera for the stated package and profile. Local self-tests remain required; preview distribution does not establish production or device certification.
 
 This repository contains public model-distribution material only. Application code is distributed separately.
+
+## Qwen3-VL 2B MNN Android preview
+
+The Qwen team, Alibaba Cloud, developed Qwen3-VL. This package preserves the official taobao-mnn converted distribution at revision `9e49ec71ded22500a997ed0f9961e1e92b85bbc9`. The upstream model card declares an Apache-2.0, 4-bit MNN llmexport conversion.
+
+The Qwen3-VL and MNN Apache-2.0 license texts and original and converted model cards are included. Jotvera adds its package envelope, signature, compatibility profile and clearly marked metadata files; the converted weights and runtime config files are unchanged.
+
+The converted card does not identify the exact conversion-tool revision or original checkpoint used in conversion. The separately preserved Qwen model card is documentation evidence and does not establish that conversion lineage. At packaging time Android inference was untested; the receiving device must pass real local text and image checks before activation.

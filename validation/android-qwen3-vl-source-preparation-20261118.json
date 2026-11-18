@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "evidenceId": "android-qwen3-vl-source-preparation-20261118",
+  "recordedDate": "2026-11-18",
+  "packageDigest": "1d4ec2131e2249d8c7468ad4dc8adf820d6d3e0d6aea4682bde5b009d478613a",
+  "upstream": {
+    "repository": "taobao-mnn/Qwen3-VL-2B-Instruct-MNN",
+    "revision": "9e49ec71ded22500a997ed0f9961e1e92b85bbc9",
+    "modelBytesModified": false,
+    "exactConverterRevisionKnown": false,
+    "exactOriginalCheckpointForConversionKnown": false
+  },
+  "verifiedFiles": 15,
+  "packageFormatVerified": true,
+  "signatureVerified": true,
+  "platform": "android",
+  "arch": "arm64",
+  "engineBuild": "mnn-40ad7e340cdf5cb29fe9d5f1f9eec794adbaef6d-jotvera-ipc1",
+  "contextTokens": 4096,
+  "maxOutputTokens": 1024,
+  "memoryBudgetBytes": 4294967296,
+  "deviceInferenceTested": false,
+  "emulatorInferenceTested": false,
+  "functionalGatePassed": false,
+  "qualityPassed": false,
+  "productionCertified": false,
+  "deviceCertified": false,
+  "requiresLocalSelfTest": true,
+  "scope": "Byte integrity, explicit license and provenance records, signature and target-format verification only. No Android model execution is asserted."
+}

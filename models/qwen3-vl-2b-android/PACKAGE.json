@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "channel": "preview",
+  "id": "qwen3-vl-2b-mnn-android-preview",
+  "name": "Qwen3-VL 2B · Android 文字与图片预览版",
+  "packageVersion": "2026.11.18-preview.1",
+  "filename": "qwen3-vl-2b-mnn-android-preview-2026.11.18-preview.1.jotvera-model",
+  "packageDigest": "1d4ec2131e2249d8c7468ad4dc8adf820d6d3e0d6aea4682bde5b009d478613a",
+  "sha256": "740261509248c5718c1cbbf4978077740cb8dce7ec6f4ac6140d97a09edd2563",
+  "bytes": 1475269427,
+  "expandedBytes": 1475264448,
+  "signatureKeyId": "jotvera-preview-qwen3-android-20261118",
+  "engine": {
+    "id": "mnn",
+    "build": "mnn-40ad7e340cdf5cb29fe9d5f1f9eec794adbaef6d-jotvera-ipc1",
+    "abi": 1
+  },
+  "targets": [
+    {
+      "platform": "android",
+      "arch": "arm64"
+    }
+  ],
+  "validation": {
+    "channel": "preview",
+    "state": "preview",
+    "qualification": "device-check-required",
+    "productionCertified": false,
+    "deviceCertified": false,
+    "requiresLocalSelfTest": true,
+    "evidenceId": "android-qwen3-vl-source-preparation-20261118",
+    "engineBuild": "mnn-40ad7e340cdf5cb29fe9d5f1f9eec794adbaef6d-jotvera-ipc1",
+    "targets": [
+      {
+        "platform": "android",
+        "arch": "arm64",
+        "profileId": "android-arm64-cpu-4g-4096-1024",
+        "verification": "untested"
+      }
+    ],
+    "configuredLimits": {
+      "contextTokens": 4096,
+      "maxOutputTokens": 1024
+    },
+    "functionalGatePassed": false,
+    "qualityPassed": false,
+    "qualityLimitations": [
+      "Android device and emulator inference had not been exercised at packaging time.",
+      "The complete configured context and output boundaries have not been exercised.",
+      "The official converted-model card does not identify the exact conversion tool revision or source checkpoint.",
+      "Each receiving device must pass real local text and image self-tests before activation; a passing self-test does not certify answer quality."
+    ]
+  },
+  "licenseAuditId": "jotvera-component-license-audit-20261118-qwen3-vl-mnn",
+  "upstream": {
+    "url": "https://huggingface.co/taobao-mnn/Qwen3-VL-2B-Instruct-MNN",
+    "revision": "9e49ec71ded22500a997ed0f9961e1e92b85bbc9"
+  },
+  "files": [
+    {
+      "path": "MODEL-CARD-MNN.md",
+      "bytes": 1241,
+      "sha256": "a4d52f943ed4dd712f8acd9f5306bfa53164e1fdd7b02aa4bd1b1374d0f7004a",
+      "role": "notice"
+    },
+    {
+      "path": "config.json",
+      "bytes": 605,
+      "sha256": "1ed5c6e65459fdc4b0c33319715b763005013ba8580dd3c687bd2651546ca2a4",
+      "role": "config"
+    },
+    {
+      "path": "llm.mnn",
+      "bytes": 462464,
+      "sha256": "c2286f60cbd56a82f26bfeac92f6a96e9690889b1939346abfe9e1fae996a8f3",
+      "role": "weights"
+    },
+    {
+      "path": "llm.mnn.json",
+      "bytes": 972944,
+      "sha256": "961dec6de26a53f63ba03e0560b52b9fc41f9a8f6c4188ee15a7a0755e883ea0",
+      "role": "config"
+    },
+    {
+      "path": "llm.mnn.weight",
+      "bytes": 1231860194,
+      "sha256": "1554f9ce71743b56c2d7fba4cb0c2a31c7cddf4f21e1a2ff5a2e85b9a316a29f",
+      "role": "weights"
+    },
+    {
+      "path": "llm_config.json",
+      "bytes": 6445,
+      "sha256": "5408721c81cc9a7ea8aa485a0652e5e1a47dd5ea5bbd5af2e1f16bc4f6358699",
+      "role": "config"
+    },
+    {
+      "path": "tokenizer.txt",
+      "bytes": 3193555,
+      "sha256": "7119de4966cc6a8ae87d7f083e65b315282d06c3122fdd41ce783fdd2d3c1ca2",
+      "role": "tokenizer"
+    },
+    {
+      "path": "visual.mnn",
+      "bytes": 502512,
+      "sha256": "c489c1f65dc6aa5bcee42b3e291f7987df1111423c1fe570d0f3394e1207d2bb",
+      "role": "vision"
+    },
+    {
+      "path": "visual.mnn.weight",
+      "bytes": 238226780,
+      "sha256": "9feb04848cafad1117a510b43d6c2b58d6c31bef1040598156d266f9b42f581f",
+      "role": "vision"
+    },
+    {
+      "path": "LICENSE-Qwen3-VL.txt",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "role": "license"
+    },
+    {
+      "path": "LICENSE-MNN.txt",
+      "bytes": 11346,
+      "sha256": "a830d59c4f98d110e0540d0581efada06192ba6e798434307d1794b07a290302",
+      "role": "license"
+    },
+    {
+      "path": "MODEL-CARD-Qwen3-VL.md",
+      "bytes": 7136,
+      "sha256": "5fc5be1ca9a3910399bd6239ee5086ab5d82a2a59c5d2b00e887a8835cc110e4",
+      "role": "notice"
+    },
+    {
+      "path": "processor-metadata.json",
+      "bytes": 590,
+      "sha256": "2f2836511d29f6eebef3c34778c85bce214d33914a8eb849698835112fd31413",
+      "role": "processor"
+    },
+    {
+      "path": "template-metadata.json",
+      "bytes": 5858,
+      "sha256": "b6bf77795a6da22941f0e97e5ef023e722022aa524955a1338c1edf4e71e90d2",
+      "role": "template"
+    },
+    {
+      "path": "NOTICE-Jotvera-preview.md",
+      "bytes": 1421,
+      "sha256": "2ed455fcb80a513b7610b0fbdff23b12c5e46c2367d1cb3ecd755e458637cbab",
+      "role": "notice"
+    }
+  ],
+  "verifiedTargets": [
+    {
+      "platform": "android",
+      "arch": "arm64",
+      "packageFormatVerified": true,
+      "deviceInferenceTested": false
+    }
+  ],
+  "privateKeyPersisted": false,
+  "productionCertified": false
+}
