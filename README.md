@@ -8,7 +8,7 @@
 
 应用会下载对应系统的模型包，检查完整包哈希、发布签名和每个文件的哈希，完成本机文字与图片自检后再启用。网络中断可以稍后继续；自检失败会保留现有模型选择，并给出可重试的原因。离线导入仍可用于手动安装同一个完整包。
 
-首个公开预览 Release 已发布：[`preview-2026.11.18`](https://github.com/makersns/jotvera-models/releases/tag/preview-2026.11.18)。MiniCPM 包已上传；Android 包正在上传到同一版本。模型二进制文件存放在 Release 附件中，不存放在 Git 历史中。
+首个公开预览 Release 已发布：[`preview-2026.11.18`](https://github.com/makersns/jotvera-models/releases/tag/preview-2026.11.18)。MiniCPM 与 Android 专用包均已上传，附有清单、公钥与完整文件校验值。模型二进制文件存放在 Release 附件中，不存放在 Git 历史中。
 
 ## 平台与验证范围
 
@@ -16,7 +16,7 @@
 | --- | --- | --- |
 | macOS Apple Silicon / ARM64 | MiniCPM-V 4.7 1B，GGUF / llama.cpp | 同一组文件和 CPU 配置已进行真实文字、图片与退出测试；每次安装仍需本机自检。 |
 | Windows x64 | 同一 MiniCPM GGUF 包，Windows 原生 llama.cpp 引擎 | 包格式、签名和目标匹配已校验；尚未完成 Windows 设备上的模型推理验证。 |
-| Android ARM64 | 独立的 Qwen3-VL 2B / MNN 包 | 平台专用包已签名并通过格式校验，正在上传；不能使用上面的 GGUF 包替代。尚未完成 Android 设备推理验证。 |
+| Android ARM64 | 独立的 Qwen3-VL 2B / MNN 包 | 平台专用包已签名、发布并通过格式校验；不能使用上面的 GGUF 包替代。尚未完成 Android 设备推理验证。 |
 
 客户端必须内置与包清单完全匹配的引擎构建。目标系统或引擎不匹配时，应用不会把包显示为可安装。Windows ARM64、macOS Intel 及其他目标不在本次包的声明范围内。
 
