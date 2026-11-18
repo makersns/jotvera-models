@@ -1,0 +1,168 @@
+{
+  "capabilities": [
+    "chat",
+    "vision"
+  ],
+  "displayName": "MiniCPM-V 4.7 1B · 文字与图片预览版",
+  "engine": {
+    "abi": 1,
+    "build": "llama-52975342ff6b85127ff31930d39e36725fd08809-jotvera-ipc1",
+    "id": "llama"
+  },
+  "files": [
+    {
+      "bytes": 7249,
+      "path": "chat_template.jinja",
+      "role": "template",
+      "sha256": "49c37bcc86c7f7f20ed2ebf79e9f872be41ba2b5f9d0d51e6712cc038ef51d6c"
+    },
+    {
+      "bytes": 2575,
+      "path": "config.json",
+      "role": "config",
+      "sha256": "20ed1fe71b174719b88ed1ce37c840ec45e3657f1120391d45f33505be7638a4"
+    },
+    {
+      "bytes": 148,
+      "path": "preprocessor_config.json",
+      "role": "processor",
+      "sha256": "c64289d04f36e48d9d059e3a0069f54062b2ef6044a807adb448b98449cb54de"
+    },
+    {
+      "bytes": 2,
+      "path": "processor_config.json",
+      "role": "config",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "bytes": 1436,
+      "path": "tokenizer_config.json",
+      "role": "config",
+      "sha256": "900ecc6ba690a07270dc23935d17bbb7d2ed69a073a90a9cf731e5313e86ebba"
+    },
+    {
+      "bytes": 27366,
+      "path": "MODEL-CARD-GGUF.md",
+      "role": "notice",
+      "sha256": "26d0209c07043b8515c33908fd84e70ab1fbf0fd5154ea92bb6427678c2c8219"
+    },
+    {
+      "bytes": 11332,
+      "path": "LICENSE-OpenBMB.txt",
+      "role": "license",
+      "sha256": "186c8635e1f88660ec113f4935867a612e35b3124aca5c712d97e2e33d7eb677"
+    },
+    {
+      "bytes": 11356,
+      "path": "LICENSE-big-vision.txt",
+      "role": "license",
+      "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1"
+    },
+    {
+      "bytes": 672003680,
+      "path": "MiniCPM-V-4_7-1B-Q4_K_M.gguf",
+      "role": "weights",
+      "sha256": "f18f594747e5317ab490cff9c06339c9cfb89acbe2f02ebc48a4e167bc23576d"
+    },
+    {
+      "bytes": 1110117984,
+      "path": "mmproj-model-f16.gguf",
+      "role": "vision",
+      "sha256": "fb9cc047a3cdad5317fd8433a4aeda2d22f00f02ca4bd93b34ad84165b25a900"
+    }
+  ],
+  "format": "gguf",
+  "licenseRecords": [
+    {
+      "component": "OpenBMB/MiniCPM-V",
+      "id": "Apache-2.0",
+      "path": "LICENSE-OpenBMB.txt",
+      "revision": "4dbbb6c58b6f8a004d6689028417296719f0831a",
+      "source": "https://raw.githubusercontent.com/OpenBMB/MiniCPM-V/4dbbb6c58b6f8a004d6689028417296719f0831a/LICENSE"
+    },
+    {
+      "component": "google-research/big_vision",
+      "id": "Apache-2.0",
+      "path": "LICENSE-big-vision.txt",
+      "revision": "0127fb6b337ee2a27bf4e54dea79cff176527356",
+      "source": "https://raw.githubusercontent.com/google-research/big_vision/0127fb6b337ee2a27bf4e54dea79cff176527356/LICENSE"
+    }
+  ],
+  "minAppVersion": "3.8.0",
+  "modelId": "minicpm-v4.7-1b-gguf-cpu-preview",
+  "packageVersion": "2026.11.18-preview.1",
+  "profile": {
+    "backend": "cpu",
+    "contextTokens": 32768,
+    "embeddedTokenizer": true,
+    "maxImagePixels": 4194304,
+    "maxImages": 1,
+    "maxOutputTokens": 8192,
+    "memoryBytes": 4294967296,
+    "modelPath": "MiniCPM-V-4_7-1B-Q4_K_M.gguf",
+    "processorPath": "preprocessor_config.json",
+    "templatePath": "chat_template.jinja",
+    "threads": 4,
+    "visionPath": "mmproj-model-f16.gguf"
+  },
+  "schemaVersion": 1,
+  "targets": [
+    {
+      "platform": "darwin",
+      "arch": "arm64"
+    },
+    {
+      "platform": "win32",
+      "arch": "x64"
+    }
+  ],
+  "upstream": {
+    "revision": "e81247fa2eac0d99e43aeac55da199221959af15",
+    "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf"
+  },
+  "validation": {
+    "channel": "preview",
+    "state": "preview",
+    "qualification": "configuration-reviewed",
+    "productionCertified": false,
+    "deviceCertified": false,
+    "requiresLocalSelfTest": true,
+    "evidenceId": "minicpm-v4.7-1b-mac-cpu-profile-20261118",
+    "engineBuild": "llama-52975342ff6b85127ff31930d39e36725fd08809-jotvera-ipc1",
+    "targets": [
+      {
+        "platform": "darwin",
+        "arch": "arm64",
+        "profileId": "cpu-max-32768-8192",
+        "verification": "tested",
+        "evidenceId": "minicpm-v4.7-1b-mac-cpu-profile-20261118"
+      },
+      {
+        "platform": "win32",
+        "arch": "x64",
+        "profileId": "cpu-max-32768-8192",
+        "verification": "untested"
+      }
+    ],
+    "sourcePackageDigest": "45c10994cc70e29811675873528dcd023242ad5da97d93a8fcd05ffe518725de",
+    "configuredLimits": {
+      "contextTokens": 32768,
+      "maxOutputTokens": 8192
+    },
+    "observedLimits": {
+      "maximumInputTokens": 551,
+      "maximumOutputTokens": 3892,
+      "outputBoundaryObserved": false,
+      "fullContextBoundaryObserved": false
+    },
+    "functionalGatePassed": false,
+    "qualityPassed": false,
+    "qualityLimitations": [
+      "Observed factual hallucinations, short or repetitive long-form answers, and failure to keep answers within a selected passage.",
+      "The model may stop naturally before the configured output limit.",
+      "The complete 32768-token input and 8192-token output boundaries have not been exercised.",
+      "Windows device inference has not been verified; each device must pass local text and image self-tests before activation."
+    ]
+  },
+  "licenseAuditId": "jotvera-component-license-audit-20261118-minicpm-v47-1b"
+}

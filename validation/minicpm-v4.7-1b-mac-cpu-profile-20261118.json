@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "evidenceId": "minicpm-v4.7-1b-mac-cpu-profile-20261118",
+  "recordedDate": "2026-11-18",
+  "scope": "Same upstream model files and CPU profile as the public preview; earlier local package envelope. New public envelope independently verified.",
+  "publicPackageDigest": "1924f476bdf3d78c9819daa38a7fe575b10235c6e2d8823ec945bbd962cdb895",
+  "testedProfile": {
+    "platform": "darwin",
+    "arch": "arm64",
+    "engineBuild": "llama-52975342ff6b85127ff31930d39e36725fd08809-jotvera-ipc1",
+    "accelerator": "cpu",
+    "threads": 4,
+    "memoryBudgetBytes": 4294967296,
+    "contextTokens": 32768,
+    "maxOutputTokens": 8192
+  },
+  "observed": {
+    "textInference": true,
+    "imageInference": true,
+    "cancellationAndExitConfirmed": true,
+    "maximumInputTokens": 551,
+    "maximumOutputTokens": 3892,
+    "longestRunFinishReason": "stop",
+    "fullContextBoundaryObserved": false,
+    "outputBoundaryObserved": false
+  },
+  "packageFormatVerification": [
+    {
+      "platform": "darwin",
+      "arch": "arm64",
+      "passed": true
+    },
+    {
+      "platform": "win32",
+      "arch": "x64",
+      "passed": true
+    }
+  ],
+  "windowsDeviceInferenceTested": false,
+  "androidDeviceInferenceTested": false,
+  "requiresLocalSelfTest": true,
+  "productionCertified": false,
+  "deviceCertified": false,
+  "functionalGatePassed": false,
+  "qualityPassed": false,
+  "limitations": [
+    "Factual hallucinations were observed.",
+    "Long-form answers could be shorter than requested or repetitive.",
+    "A selected-passage question could include surrounding-note facts.",
+    "A configured maximum does not force the model to produce that many tokens.",
+    "The complete configured input and output boundaries have not been exercised.",
+    "Windows package-format verification is not native Windows inference validation."
+  ]
+}
