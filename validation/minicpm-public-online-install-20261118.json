@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "evidenceId": "minicpm-public-online-install-20261118",
+  "recordedDate": "2026-11-18",
+  "scope": "Real public HTTPS download and production installation HTTP APIs in an isolated account on a macOS arm64 source-checkout runtime; not browser or packaged desktop UI acceptance.",
+  "startedAt": "2026-11-18T10:25:00.281Z",
+  "finishedAt": "2026-11-18T11:01:25.600Z",
+  "platform": "darwin",
+  "arch": "arm64",
+  "catalogId": "minicpm-v4.7-1b-gguf-cpu-preview",
+  "packageDigest": "1924f476bdf3d78c9819daa38a7fe575b10235c6e2d8823ec945bbd962cdb895",
+  "container": {
+    "bytes": 1782187572,
+    "sha256": "9a9082d62d7448f059daf1c06fb37e10076793af2f721486037f792f013d109f",
+    "independentlyHashedAfterDownload": true
+  },
+  "engineBuild": "llama-52975342ff6b85127ff31930d39e36725fd08809-jotvera-ipc1",
+  "profile": {
+    "backend": "cpu",
+    "threads": 4,
+    "memoryBytes": 4294967296,
+    "contextTokens": 32768,
+    "maxOutputTokens": 8192
+  },
+  "observed": {
+    "completePublicTransfer": true,
+    "localPackageSubstitution": false,
+    "pauseResume": {
+      "passed": true,
+      "originalPartialPreserved": true,
+      "pausedAtBytes": 1053504,
+      "rangeStart": 1053504,
+      "responseStatus": 206,
+      "strongEtagMatched": true
+    },
+    "signatureAndPerFileVerification": true,
+    "expandedBytes": 1782183128,
+    "productionSelfTests": {
+      "text": true,
+      "image": true
+    },
+    "autoActivation": true,
+    "syntheticDefaultRevisionBefore": 0,
+    "syntheticDefaultRevisionAfter": 1,
+    "installReplayIdempotent": true,
+    "sourceUnchangedDuringRun": true,
+    "isolatedRuntimeClosed": true,
+    "finalActiveJobs": 0,
+    "finalActiveInstallations": 0,
+    "finalLeases": 0,
+    "isolatedDataRemoved": true,
+    "additionalGenerationRequests": 0
+  },
+  "acceptanceChecks": {
+    "total": 7,
+    "passed": 7,
+    "failed": 0,
+    "completed": true
+  },
+  "rawEvidenceSha256": "b95b9636428c3ac86f6dc81eef1d2728d01fddfa2bd7c9041194a081020d3ce0",
+  "productionCertified": false,
+  "deviceCertified": false,
+  "qualityPassed": false,
+  "requiresLocalSelfTest": true,
+  "boundaries": {
+    "browserUiTested": false,
+    "packagedDesktopUiTested": false,
+    "windowsInferenceTested": false,
+    "androidInferenceTested": false,
+    "fullContextBoundaryTested": false,
+    "fullOutputBoundaryTested": false
+  },
+  "limitations": [
+    "Successful loading and installation self-tests do not establish factual accuracy or long-form answer quality.",
+    "The recorded run applies to this package, engine and CPU profile; other devices still require local text and image self-tests."
+  ]
+}

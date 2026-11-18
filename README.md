@@ -14,11 +14,17 @@
 
 | 平台 | 模型与引擎 | 当前证据 |
 | --- | --- | --- |
-| macOS Apple Silicon / ARM64 | MiniCPM-V 4.7 1B，GGUF / llama.cpp | 同一组文件和 CPU 配置已进行真实文字、图片与退出测试；每次安装仍需本机自检。 |
+| macOS Apple Silicon / ARM64 | MiniCPM-V 4.7 1B，GGUF / llama.cpp | 已完成真实文字/图片测试及公开整包下载、暂停续传、校验、自检后自动启用；范围为源码运行时 HTTP 流程，每次安装仍需本机自检。 |
 | Windows x64 | 同一 MiniCPM GGUF 包，Windows 原生 llama.cpp 引擎 | 包格式、签名和目标匹配已校验；尚未完成 Windows 设备上的模型推理验证。 |
 | Android ARM64 | 独立的 Qwen3-VL 2B / MNN 包 | 平台专用包已签名、发布并通过格式校验；不能使用上面的 GGUF 包替代。尚未完成 Android 设备推理验证。 |
 
 客户端必须内置与包清单完全匹配的引擎构建。目标系统或引擎不匹配时，应用不会把包显示为可安装。Windows ARM64、macOS Intel 及其他目标不在本次包的声明范围内。
+
+## 已完成的 Mac 在线安装验证
+
+2026-11-18 的 macOS ARM64 验收从公开 Release 实际下载完整 1,782,187,572 字节，真实暂停后通过强 ETag 和 HTTP 206 继续下载。生产路径完成签名和逐文件校验、文字与图片自检，再自动设为默认模型；重复同一安装请求没有重复启用。独立计算的完整包 SHA-256 与发布文件一致。七项检查全部通过，隔离测试运行时、资源占用和临时数据均已清理。
+
+这次验证覆盖源码运行时的实际 HTTP 安装流程，尚不代表浏览器或打包桌面界面的验收，也不改变模型回答质量、Windows/Android 设备推理及完整 token 边界的未验证状态。脱敏的机器可读记录见 [Mac 公开在线安装验收](validation/minicpm-public-online-install-20261118.json)。
 
 ## MiniCPM 预览包
 
